@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+svg-icon {
+  &[class*="ic-"] {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    background: currentColor;
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+  }
+  &[class*="ic-github"] {
+    mask-image: url("/assets/svgs/github.svg");
+  }
+}
